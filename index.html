@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday PUKU❤️</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Our CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+MUSIC CONTROL
+========================= -->
+
+<button id="musicBtn" class="music-btn">
+<i class="fa-solid fa-music"></i>
+</button>
+
+<!-- =========================
+LOADING SCREEN
+========================= -->
+
+<section id="loader">
+
+<div class="stars"></div>
+
+<div class="loader-content">
+
+    <h1>
+        Something special is waiting...
+    </h1>
+
+    <div class="heart-loader">
+        ❤️
+    </div>
+
+    <p>
+        Preparing your surprise
+    </p>
+
+</div>
+</section>
+
+<!-- =========================
+PASSWORD SCREEN
+========================= -->
+
+<section id="passwordScreen">
+
+<div class="password-box">
+
+    <i class="fa-solid fa-lock"></i>
+
+    <h2>
+        A Little Secret
+    </h2>
+
+    <p>
+        Enter the password to open your surprise ❤️
+    </p>
+
+    <input 
+        type="password" 
+        id="passwordInput"
+        placeholder="Enter password"
+    >
+
+    <button id="unlockBtn">
+        Open Surprise ✨
+    </button>
+
+    <p id="wrongPassword"></p>
+
+</div>
+</section>
+
+<!-- =========================
+MAIN WEBSITE
+========================= -->
+
+<main id="mainContent">
+
+<!-- =========================
+HERO SECTION
+========================= -->
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content"
+     data-aos="zoom-in">
+
+    <p class="small-text">
+        To the most beautiful person in my life
+    </p>
+
+    <h1>
+        Happy Birthday
+        <span id="herName">
+            Molly(PUKU❤️)
+        </span>
+        ❤️
+    </h1>
+
+    <div class="typing-box">
+
+        <span id="typingText"></span>
+
+    </div>
+
+    <button class="scroll-btn">
+
+        Explore Your Surprise
+
+        <i class="fa-solid fa-arrow-down"></i>
+
+    </button>
+
+</div>
+</section>
+
+<!-- =========================
+FLOATING HEARTS
+========================= -->
+
+<div id="hearts-container"></div>
+
+<!-- =========================
+MEMORY SECTION START
+========================= -->
+
+<section class="memories"
+data-aos="fade-up">
+
+<h2>
+Our Beautiful Memories 📸
+</h2>
+
+<p>
+Every moment with you is special.
+</p>
+
+<div class="gallery">
+
+<div class="photo-card">
+
+<img src="assets/photos/photo1.jpg"
+alt="Memory">
+
+</div>
+
+<div class="photo-card">
+
+<img src="assets/photos/photo2.jpg"
+alt="Memory">
+
+</div>
+
+<div class="photo-card">
+
+<img src="assets/photos/photo3.jpg"
+alt="Memory">
+
+</div>
+
+<div class="photo-card">
+
+<img src="assets/photos/photo4.jpg"
+alt="Memory">
+
+</div>
+
+<div class="photo-card">
+
+<img src="assets/photos/photo5.jpg"
+alt="Memory">
+
+</div>
+
+<div class="photo-card">
+
+<img src="assets/photos/photo6.jpg"
+alt="Memory">
+
+</div>
+</div>
+
+</section>
+
+
+<!-- =========================
+LOVE LETTER SECTION
+========================= -->
+
+<section class="letter-section"
+data-aos="fade-up">
+
+<h2>
+A Letter For You 💌
+</h2>
+
+<div class="envelope-container"
+id="envelope">
+
+<div class="envelope">
+
+<div class="flap"></div>
+
+<div class="letter">
+
+<h3>
+My Dearest Love ❤️
+</h3>
+
+<p id="letterText">
+
+Happy Birthday my love.
+
+Today is a very special day because the world received someone who makes my life brighter.
+
+Even though we are far from each other, you are always close to my heart.
+
+Thank you for every smile, every conversation, and every beautiful memory we have created together.
+
+I hope this year brings you endless happiness, success, and everything you dream of.
+
+I cannot wait for the day when we can celebrate moments like this together.
+
+I love you ❤️
+
+</p>
+
+</div>
+
+</div>
+
+<button id="openLetter">
+Open My Letter 💌
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+VIDEO SURPRISE
+========================= -->
+
+<section class="video-section"
+data-aos="zoom-in">
+
+<h2>
+Puku&Koko ❤️ 🎥
+</h2>
+
+<div class="video-box">
+
+<video
+id="birthdayVideo"
+controls>
+
+<source
+src="assets/video/birthday.mp4"
+type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+</div>
+
+<p>
+A small message from my heart ❤️
+</p>
+
+</section>
+
+<!-- =========================
+GIFT BOX SECTION
+========================= -->
+
+<section class="gift-section"
+data-aos="fade-up">
+
+<h2>
+I Have A Gift For You 🎁
+</h2>
+
+<div class="gift-box"
+id="giftBox">
+
+<div class="gift-lid"></div>
+
+<div class="gift-body">
+
+</div>
+
+</div>
+
+<p id="giftMessage">
+
+Click the gift box ✨
+
+</p>
+
+</section>
+
+<!-- =========================
+CAKE SECTION
+========================= -->
+
+<section class="cake-section"
+data-aos="zoom-in">
+
+<h2>
+Make A Wish 🎂
+</h2>
+
+<div class="cake">
+
+<div class="candle">
+
+<div class="flame"></div>
+
+</div>
+
+<div class="cake-top"></div>
+
+<div class="cake-middle"></div>
+
+<div class="cake-bottom"></div>
+
+</div>
+
+<button id="blowCandle">
+
+Blow The Candle ✨
+
+</button>
+
+</section>
+
+<!-- =========================
+FIREWORK AREA
+========================= -->
+
+<section class="celebration">
+
+<canvas id="fireworks"></canvas>
+
+<div class="final-message">
+
+<h1>
+
+Happy Birthday ❤️
+
+</h1>
+
+<p>
+
+Distance may separate us,
+but my heart is always with you.
+
+</p>
+
+<h2>
+
+I Love You Forever 💕
+
+</h2>
+
+</div>
+
+</section>
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+Made with ❤️ from Nepal to Myanmar
+
+</p>
+
+<p>
+
+For the most special person in my life that't my baby PUKU❤️Mwah Mwah
+
+</p>
+
+</footer>
+
+</main>
+
+<!-- =========================
+SCRIPTS
+========================= -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Our JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
